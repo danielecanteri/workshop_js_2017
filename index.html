@@ -48,8 +48,8 @@ class: center, middle
 6. Chatbot per slack
 7. Ssr e Turbolinks
 8. Development environment, in the cloud
-9...
-
+9. Zero-knowledge solutions
+10...
 ---
 
 # Introduzione
@@ -87,6 +87,68 @@ function add(a, b) {
 
 Nitrous.io vs. Koding vs. Cloud9
 
+https://www.slant.co/topics/713/~best-cloud-ides
+
+---
+
+# Developing zero-knowledge solutions 
+### API di crittografia Web
+###### (realizzato da Jose Aguinaga)
+
+Nel gennaio del 2017, l'API Web Cryptography è diventata una raccomandazione del W3C. 
+
+Utilizzando implementazioni native  del browser gli sviluppatori possono fornito soluzioni di crittografia lato client ai loro utenti per proteggere i propri dati.
+
+Creare zero-knowledge solutions vuol dire fornire contenuti specifici del cliente senza fare affidamento su implementazioni lato server. 
+
+---
+
+# API Web Cryptography Feature
+
+L'API Web Cryptography offre operazioni crittografiche di base nelle applicazioni Web, quali hashing, generazione e verifica della firma, crittografia e decrittografia.
+
+L'API Web Cryptography rende possibili alcuni importanti scenari di sicurezza per le app Web, che vanno dall'autenticazione affidabile di utenti e servizi alla firma di codice e documenti, fino alla riservatezza e integrità delle comunicazioni, il tutto senza rendere necessaria una connessione sicura tramite SSL o un protocollo simile. Nello specifico, puoi usare l'API di crittografia Web per:
+* Autenticazione a più fattori
+* Scambio di documenti protetto
+* Archiviazione nel cloud
+* Firma dei documenti
+* Protezione dell'integrità dei dati
+* Messaggistica sicura
+* Transazioni finanziarie
+* Protezione delle identità in Rete.
+
+---
+# Esempio:
+
+https://deniable.website
+
+Un "Deniable website" è un sito che non può limitato nei contenuti. Potresti vederne alcuni, ma non tutti perché è crittografato.
+
+Il contenuto è decriptato al volo. Ciò significa che non era necessaria alcuna tecnologia lato server per decifrarla.
+
+A differenza delle soluzioni lato server, la crittografia lato client si basa solo sulle tecnologie del browser, in questo caso con le API di Web Cryptography.
+
+Come funziona questa pagina? C'è un elemento con id **crittografato** :
+
+
+```html
+<div id = "crittografato">
+   e5006d458e8e14 ....
+</div>
+```
+
+Questo contiene tutto il contenuto di questo sito web e viene decriptato a poco a poco. 
+
+
+---
+
+
+
+
+# Casi d'uso:
+
+* Laverna
+* boxcryptor
     </textarea>
   <script src="https://remarkjs.com/downloads/remark-latest.min.js">
 
