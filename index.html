@@ -52,7 +52,7 @@ class: center, middle
 1. Jest con Angular (2) <span style="color:red;">*</span>
 1. Chatbot per slack <span style="color:red;">*</span>
 1. SSR con Vue <span style="color:red;">*</span>
-1. Turbolinks <span style="color:red;">*</span>
+1. Turbolinks <span style="color:blue;">*</span>
 1. Zero-knowledge solutions <span style="color:blue;">*</span>
 1. Web Components <span style="color:blue;">*</span>
 1. Development environment in the cloud <span style="color:blue;">*</span>
@@ -142,11 +142,55 @@ https://github.com/danielecanteri/poc-angular-jest
 
 # Turbolinks
 
+Turbolinks è una piccola libreria che promette di velocizzare i siti web facendoli sembrare single page application... senza alcuno sforzo!
+
+--
+
+Ovvero, dite addio ad Angular e React e tornate a sviluppare le applicazioni come una volta.
+
+--
+
+### Link
+
 https://github.com/turbolinks/turbolinks
 
+---
+
+### Turbolinks, come funziona
+
+Basta aggiungere alle pagine della vostra applicazione
+
+```
+<script src="turbolinks.js"></script>
+```
+--
+
+...e basta!
+
+--
+
+Turbolinks intercetta le navigazioni e invece di ricaricare completamente la pagina (con tutti i suoi js e css) esegue:
+
+```
+document.body.innerHtml = ...
+```
+
+---
+
+# Turbolinks
+
+Una immagine di demo dal sito
+
+![Turbolinks](https://s3.amazonaws.com/turbolinks-docs/images/turbolinks.gif)
+
+
+---
+
+# Turbolinks
+
+Demo
+
 https://goo.gl/5EQ2bJ
-
-
 
 ---
 
