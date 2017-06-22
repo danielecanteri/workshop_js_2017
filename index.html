@@ -48,13 +48,14 @@ class: center, middle
 1. Chi siamo
 1. Cos'è Universal Js day
 1. Cos'è Js day
-1. Web push notification
-1. Jest con Angular (2)
-1. Chatbot per slack
-1. Ssr e Turbolinks
-1. Development environment, in the cloud
-1. Zero-knowledge solutions
-1. ...
+1. Web push notification <span style="color:red;">*</span>
+1. Jest con Angular (2) <span style="color:red;">*</span>
+1. Chatbot per slack <span style="color:red;">*</span>
+1. Ssr e Turbolinks <span style="color:red;">*</span>
+1. Zero-knowledge solutions <span style="color:blue;">*</span>
+1. Web Components <span style="color:blue;">*</span>
+1. Development environment in the cloud <span style="color:blue;">*</span>
+
 
 ---
 
@@ -92,46 +93,6 @@ http://2017.universaljsday.com
 https://2017.jsday.it
 
 ![](js_day.jpg)
-
----
-# Argomenti Js Day (1/4)
-Il 10 e 11 maggio a Verona si è svolto il JsDay 2017.
-
-Il primo talk “I’m good at JavaScript, I swear.” è stato tenuto da Jose Aguinaga ed ha analizzato lo scenario che si trova davanti uno sviluppatore javascript. La moltitudine di tool, librerie, framework porta ad una situazione dove la scelta è sempre più difficile ed è impossibile stare al passo con tutto. Basandosi su questa considerazione ha snocciolato tutti i problemi che ne possono derivare come la sindrome dell’impostore, Javascript Fatigue ed i pregiudizi che si rischia di avere rispetto alla libreria x o al tool y.
-
-Successivamente c'è stato il talk Alessandro Nadalin “SPA, isomorphic and back to the server: our journey with JS” in cui lo speacker ha illustrato le sfide e le problematiche affrontate nell’ottimizzazione delle performance dello store namshi.com.
-
-Matteo Ronchi, nel talk “Frontend automation: bring it to the next level” ci ha invece parlato della complessità che ha raggiunto il mondo dello sviluppo frontend grazie alla miriade di tool e standard presenti, mostrandoci la sua soluzione.
-
----
-# Argomenti Js Day (2/4)
-Jessica Jordan ha tenuto un talk intitolato “Animate the Web with Ember.js” in cui ci ha mostrato come realizzare animazioni in modo efficace ed efficiente.
-
-Yoshua Wuyts ha invece tenuto una sessione di live coding “Let’s build a full stack” nella quale ha incantato il pubblico sviluppando un framework completo in poco meno di un’ora.
-
-Michele Bertoli nel suo talk “Test like it’s 2017” ci ha illustrato Jest, la soluzione sviluppata da Facebook per effettuare test in javascript. Particolarmente interessante il suo pacchetto react-fix-it che permette di generare automaticamente i test dagli errori.
-
-A concludere la prima giornata è stato Nikhil Verma con il suo talk intitolato “Visual Regression Testing: from a tool to a process” che ci ha illustrato come vengono effettuati test di regressione visuale all’interno di Badoo, mostrandoci come hanno velocizzato e migliorato il sistema integrandolo all’interno del loro processo di sviluppo.
-
----
-# Argomenti Js Day (3/4)
-Il secondo giorno si è aperto con un talk di Dustin Whittle intitolato “Javascript @ Uber” nel quale ci ha illustrato come si è evoluta l’infrastruttura di Uber dal suo lancio ad oggi fino ad avere più di 15000 repositories, 3400 microservices, 260 open source repositories il tutto gestito da migliaia di ingegneri. Ci ha parlato di come venga sfruttato il linguaggio Javascript in un full stack usando Express e React.
-
-
-Successivamente ha parlato Fatos Hoti, il suo talk “What the hell is Fiber and why should I care” ci ha spiegato nel dettaglio Fiber, il nuovo algoritmo di riconciliazione che troveremo in React 16. La novità consiste in una totale riscrittura interna mantenendo le stesse API per gli sviluppatori. Il vantaggio è che il nuovo algoritmo separa il lavoro in unità (tree/subtree chunks), calcola i cambiamenti e programma la loro esecuzione. Fiber permette di mettere in pausa un lavoro e riprenderlo in seguito, assegnare priorità a vari tipi di lavori, riutilizzare lavoro precedentemente fatto e annullarlo se non più necessario. Queste novità permettono di avere un rendering incrementale.
-
-Ada Rose ha poi tenuto un talk dal titolo “Building Web Apps” dove ha mostrato come con il moderno supporto di notifiche push, API e supporto offline, le applicazioni web sono ormai al livello di app mobili native, come ad esempio Twitter Lite.
-
----
-# Argomenti Js Day (4/4)
-“What Custom Elements are good for?” è invece il talk tenuto da Maurizio Mangione in cui ci ha illustrato come sia possibile creare elementi HTML personalizzati tramite i Custom Elements e di come sia possibile integrarli con altre tipologie di componenti come React, Angular ecc.
-
-
-Jose Aguinaga ci ha illustrato le Web Cryptography API nel suo talk “Developing zero-knowledge solutions with JavaScript” spiegando con esempi pratici (https://deniable.website/) concetti come zero-knowledge proof.
-
-Phil Nash ci ha poi parlato di IndexedDB nel suo talk “An empty database in everybody’s pocket” facendo una panoramica delle varie alternative attualmente esistenti con tutti i pro ed i contro del caso, soffermandosi poi su varie librerie ne rendono l’utilizzo più comodo come IDB-Keyval, localForage, idb, Dexie e CouchDB.
-
-Infine “The big rewrite: a true story” di Marco Botton e “How open source changed my life” di Matteo Collina che ha illustrato un interessante punto di vista sull'utilità della community opensource.
 
 
 ---
@@ -177,25 +138,22 @@ https://github.com/danielecanteri/poc-angular-jest
 
 # SSR e Turbolinks
 
----
 
-# Development environment, in the cloud
-
-Nitrous.io vs. Koding vs. Cloud9
-
-https://www.slant.co/topics/713/~best-cloud-ides
 
 ---
 
 # Developing zero-knowledge solutions 
 ### API di crittografia Web
-###### (realizzato da Jose Aguinaga)
+###### <span style="color:olive;">(dal talk di Jose Aguinaga)</span>
+
 
 Nel gennaio del 2017, l'API Web Cryptography è diventata una raccomandazione del W3C. 
 
 Utilizzando implementazioni native  del browser gli sviluppatori possono fornito soluzioni di crittografia lato client ai loro utenti per proteggere i propri dati.
 
 Creare zero-knowledge solutions vuol dire fornire contenuti specifici del cliente senza fare affidamento su implementazioni lato server. 
+
+###### http://slides.com/jjperezaguinaga/zero-knowledge-solutions-with-javascript#/ 
 
 ---
 
@@ -236,15 +194,122 @@ Come funziona questa pagina? C'è un elemento con id **crittografato** :
 Questo contiene tutto il contenuto di questo sito web e viene decriptato a poco a poco. 
 
 
+
 ---
 
+# Web Components 
+### API per costruire componenti custom
+###### <span style="color:olive;">(dal talk di Maurizio Mangione: WHAT CUSTOM ELEMENTS ARE GOOD FOR?</span>
+
+I Web Components sono un insieme di caratteristiche che vengono aggiunte dal W3C al "HTML and DOM specifications" , consentono la creazione di widget riutilizzabili nelle applicazioni web. Il modello di componenti permette l'incapsulamento e l'interoperabilità dei singoli elementi HTML .
+
+Sono composti da 4 caratteristiche principali che possono essere utilizzati separatamente o tutti insieme:
+* Custom Elements
+* Shadow DOM 
+* HTML Imports 
+* HTML Templates
+
+---
+
+#Approfondimento...
+
+Web Components è un termine generico che descrive una raccolta di  quattro tecnologie che aiutano a rendere i componenti riutilizzabili. 
+
+* Il <span style="font-weight:bold;">template tag</span>  viene utilizzato per definire HTML che non viene reso alla pagina, ma può essere usato come, un modello per i componenti. Invece di creare DOM a mano il contenuto del modello può essere copiato e inserito nel componente.
+* Il <span style="font-weight:bold;">Shadow DOM</span>  che è un sotto-albero del DOM che è nascosto dal resto del documento. Regole CSS definite all'interno del Shadow DOM non influiscono al di fuori della sottostruttura e viceversa.
+* <span style="font-weight:bold;">HTML Imports</span>  che consente di buildare codice HTML e JavaScript in un unico file e importarlo come facciamo normalmente con i file CSS e JavaScript.
+* La <span style="font-weight:bold;">Custom Element API</span> ci dà il potere di registrare nuovi tag HTML e, estendere il linguaggio HTML con nuovi elementi. (Solo i nomi di tag che contengono un trattino possono essere registrati in modo da evitare conflitti) 
 
 
+---
+#Le basi...
 
-# Casi d'uso:
 
-* Laverna
-* boxcryptor
+```javascript
+class MyElement extends HTMLElement {
+  constructor() {
+    super();
+  }
+}
+
+
+customElements.define('my-element', MyElement);
+```
+
+Questo codice è sufficiente per creare un elemento personalizzato ma è completamente inutile perchè non fa nulla.
+
+Per aggiungere un comportamento personalizzato all'elemento ci sono tre callback:
+* <span style="font-weight:bold;">connectedCallback() </span> viene chiamato quando l'elemento è collegato al DOM.
+* <span style="font-weight:bold;">disconnectedCallback()</span> viene chiamato quando l'elemento viene staccato dal DOM.
+* <span style="font-weight:bold;">attributeChangedCallback(name, prevValue, newValue)</span> viene chiamato quando un attributo è cambiato. 
+
+
+---
+# Development environment, in the cloud
+### IDE Online & Demo Time :-)
+###### <span style="color:olive;">(spunto dal talk di Tessa Mero: BUILDING CHATBOTS WITH JAVASCRIPT</span>
+
+<img src="ide.png " style="width: 70%;">
+
+###### https://codenvy.io  
+###### https://codeanywhere.com
+
+---
+
+class: center, middle
+
+# Il workshop è terminato
+## Grazie
+#### QA
+
+---
+
+class: center, middle
+
+### Se non vi basta...
+
+---
+
+# Cronaca minuto per minuto del Js Day (1/4)
+Il 10 e 11 maggio a Verona si è svolto il JsDay 2017.
+
+Il primo talk “I’m good at JavaScript, I swear.” è stato tenuto da Jose Aguinaga ed ha analizzato lo scenario che si trova davanti uno sviluppatore javascript. La moltitudine di tool, librerie, framework porta ad una situazione dove la scelta è sempre più difficile ed è impossibile stare al passo con tutto. Basandosi su questa considerazione ha snocciolato tutti i problemi che ne possono derivare come la sindrome dell’impostore, Javascript Fatigue ed i pregiudizi che si rischia di avere rispetto alla libreria x o al tool y.
+
+Successivamente c'è stato il talk Alessandro Nadalin “SPA, isomorphic and back to the server: our journey with JS” in cui lo speacker ha illustrato le sfide e le problematiche affrontate nell’ottimizzazione delle performance dello store namshi.com.
+
+Matteo Ronchi, nel talk “Frontend automation: bring it to the next level” ci ha invece parlato della complessità che ha raggiunto il mondo dello sviluppo frontend grazie alla miriade di tool e standard presenti, mostrandoci la sua soluzione.
+
+---
+# Cronaca minuto per minuto del Js Day (2/4)
+Jessica Jordan ha tenuto un talk intitolato “Animate the Web with Ember.js” in cui ci ha mostrato come realizzare animazioni in modo efficace ed efficiente.
+
+Yoshua Wuyts ha invece tenuto una sessione di live coding “Let’s build a full stack” nella quale ha incantato il pubblico sviluppando un framework completo in poco meno di un’ora.
+
+Michele Bertoli nel suo talk “Test like it’s 2017” ci ha illustrato Jest, la soluzione sviluppata da Facebook per effettuare test in javascript. Particolarmente interessante il suo pacchetto react-fix-it che permette di generare automaticamente i test dagli errori.
+
+A concludere la prima giornata è stato Nikhil Verma con il suo talk intitolato “Visual Regression Testing: from a tool to a process” che ci ha illustrato come vengono effettuati test di regressione visuale all’interno di Badoo, mostrandoci come hanno velocizzato e migliorato il sistema integrandolo all’interno del loro processo di sviluppo.
+
+---
+# Cronaca minuto per minuto del Js Day (3/4)
+Il secondo giorno si è aperto con un talk di Dustin Whittle intitolato “Javascript @ Uber” nel quale ci ha illustrato come si è evoluta l’infrastruttura di Uber dal suo lancio ad oggi fino ad avere più di 15000 repositories, 3400 microservices, 260 open source repositories il tutto gestito da migliaia di ingegneri. Ci ha parlato di come venga sfruttato il linguaggio Javascript in un full stack usando Express e React.
+
+
+Successivamente ha parlato Fatos Hoti, il suo talk “What the hell is Fiber and why should I care” ci ha spiegato nel dettaglio Fiber, il nuovo algoritmo di riconciliazione che troveremo in React 16. La novità consiste in una totale riscrittura interna mantenendo le stesse API per gli sviluppatori. Il vantaggio è che il nuovo algoritmo separa il lavoro in unità (tree/subtree chunks), calcola i cambiamenti e programma la loro esecuzione. Fiber permette di mettere in pausa un lavoro e riprenderlo in seguito, assegnare priorità a vari tipi di lavori, riutilizzare lavoro precedentemente fatto e annullarlo se non più necessario. Queste novità permettono di avere un rendering incrementale.
+
+Ada Rose ha poi tenuto un talk dal titolo “Building Web Apps” dove ha mostrato come con il moderno supporto di notifiche push, API e supporto offline, le applicazioni web sono ormai al livello di app mobili native, come ad esempio Twitter Lite.
+
+---
+# Cronaca minuto per minuto del Js Day (4/4)
+“What Custom Elements are good for?” è invece il talk tenuto da Maurizio Mangione in cui ci ha illustrato come sia possibile creare elementi HTML personalizzati tramite i Custom Elements e di come sia possibile integrarli con altre tipologie di componenti come React, Angular ecc.
+
+
+Jose Aguinaga ci ha illustrato le Web Cryptography API nel suo talk “Developing zero-knowledge solutions with JavaScript” spiegando con esempi pratici (https://deniable.website/) concetti come zero-knowledge proof.
+
+Phil Nash ci ha poi parlato di IndexedDB nel suo talk “An empty database in everybody’s pocket” facendo una panoramica delle varie alternative attualmente esistenti con tutti i pro ed i contro del caso, soffermandosi poi su varie librerie ne rendono l’utilizzo più comodo come IDB-Keyval, localForage, idb, Dexie e CouchDB.
+
+Infine “The big rewrite: a true story” di Marco Botton e “How open source changed my life” di Matteo Collina che ha illustrato un interessante punto di vista sull'utilità della community opensource.
+
+
     </textarea>
   <script src="https://remarkjs.com/downloads/remark-latest.min.js">
 
