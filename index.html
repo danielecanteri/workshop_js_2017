@@ -26,7 +26,7 @@
     }
 
     img {
-      width: 100%
+      width: 90%;
     }
   </style>
 </head>
@@ -50,7 +50,7 @@ class: center, middle
 1. Cos'è Js day
 1. Web push notification <span style="color:red;">*</span>
 1. Jest con Angular (2/4) <span style="color:blue;">*</span>
-1. Chatbot per slack <span style="color:red;">*</span>
+1. Chatbot per slack <span style="color:blue;">*</span>
 1. SSR con Vue <span style="color:red;">*</span>
 1. Turbolinks <span style="color:blue;">*</span>
 1. Zero-knowledge solutions <span style="color:blue;">*</span>
@@ -188,6 +188,64 @@ https://github.com/danielecanteri/poc-slackbot
 
 # SSR con Vue
 
+### Cos'è client side rendering
+
+![](csr.png)
+
+---
+
+# SSR con Vue
+
+### Cos'è server side rendering
+
+![](ssr.png)
+
+---
+
+# SSR con Vue
+
+### Cos'è Vue
+
+Si tratta di un framework molto leggero e semplice per fare applicazioni _moderne_
+
+--
+
+### Reference
+
+https://vuejs.org/
+
+--
+
+### In soldoni
+
+E' una alternativa ai vari Angular e React
+
+--
+
+E' spesso pubblicizzato come framework _progressivo_
+
+---
+
+# SSR con Vue
+
+Si può fare SSR con Vue?
+
+--
+
+Sì, c'è la guida:
+
+https://vuejs.org/v2/guide/ssr.html
+
+--
+
+Peccato che sia complicatissima!
+
+--
+
+Forse lo starter kit può aiutare
+
+https://github.com/doabit/vue-ssr-starter-kit
+
 ---
 
 # Turbolinks
@@ -206,11 +264,13 @@ https://github.com/turbolinks/turbolinks
 
 ---
 
-### Turbolinks, come funziona
+### Turbolinks
+
+### Come funziona
 
 Basta aggiungere alle pagine della vostra applicazione
 
-```
+```html
 <script src="turbolinks.js"></script>
 ```
 --
@@ -221,7 +281,7 @@ Basta aggiungere alle pagine della vostra applicazione
 
 Turbolinks intercetta le navigazioni e invece di ricaricare completamente la pagina (con tutti i suoi js e css) esegue:
 
-```
+```js
 document.body.innerHtml = ...
 ```
 
@@ -238,7 +298,7 @@ Una immagine di demo dal sito
 
 # Turbolinks
 
-Demo
+### Demo
 
 https://goo.gl/5EQ2bJ
 
