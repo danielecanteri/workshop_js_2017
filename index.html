@@ -48,11 +48,11 @@ class: center, middle
 1. Chi siamo
 1. Cos'è Universal Js day
 1. Cos'è Js day
-1. Web push notification <span style="color:red;">*</span>
-1. Jest con Angular (2/4) <span style="color:blue;">*</span>
-1. Chatbot per slack <span style="color:blue;">*</span>
-1. SSR con Vue <span style="color:red;">*</span>
-1. Turbolinks <span style="color:blue;">*</span>
+1. Web push notification
+1. Jest con Angular (2/4)
+1. Chatbot per slack
+1. SSR con Vue
+1. Turbolinks
 1. Zero-knowledge solutions <span style="color:blue;">*</span>
 1. Web Components <span style="color:blue;">*</span>
 1. Development environment in the cloud <span style="color:blue;">*</span>
@@ -109,6 +109,82 @@ https://2017.jsday.it
 ---
 
 # Web push notification
+
+### Di cosa parliamo
+
+Invio di notifiche da un application server al browser (desktop/mobile)
+
+--
+
+![](web_push.jpg)
+
+---
+
+# Web push notification
+
+### Come fare
+
+https://developers.google.com/web/fundamentals/getting-started/codelabs/push-notifications
+
+### Attenzione
+
+Bisogna registrare l'applicazione su Google Cloud Messaging
+
+---
+
+# Web push notification
+
+### Come fare su application 
+
+Bisogna salvare le subscription dei client da qualche parte
+
+```js
+app.post('/api/subscription/add', (request, response) => {
+  var pushSubscription = request.body.subscription;
+
+  subscriptions.push({ ...});
+});
+```
+
+Si utilizzano librerie (nel mio esempio `web-push`) per inviare i messaggi specificando le chiavi dell'applicazione
+
+```js
+webPush.sendNotification(subscription.subscription, 'hello')
+```
+
+---
+
+# Web push notification
+
+### Come fare su client
+
+Bisogna registrare un service worker che resta in ascolto delle notifiche
+
+```js
+self.addEventListener('push', function(event) {
+  console.log('[Service Worker] Push Received.');
+  console.log(`[Service Worker] Push had this data: "${event.data.text()}"`);
+
+  // TODO
+  
+});
+```
+
+---
+
+# Web push notification
+
+### Demo
+
+https://goo.gl/JyF1Hg
+
+--
+
+### Nota
+
+Come capire quali sono i service workers abilitati?
+
+chrome://serviceworker-internals
 
 ---
 
