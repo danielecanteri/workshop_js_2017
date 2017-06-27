@@ -247,6 +247,24 @@ La sua caratteristica principale, oltre alla semplicità, è permettere lo _snap
 
 Grazie a al modulo npm `jest-preset-angular` è possibile utilizzare Jest anche nei progetti Angular
 
+--
+
+## Vantaggi
+
+Invece dei soliti controlli
+```js
+expect(compiled.querySelector('h1').textContent).toContain('app works!');
+```
+
+--
+Possiamo semplicemente fare:
+```js
+expect(fixture).toMatchSnapshot();
+```
+---
+
+# Jest con Angular (2/4)
+
 ### Demo
 
 https://github.com/danielecanteri/poc-angular-jest
